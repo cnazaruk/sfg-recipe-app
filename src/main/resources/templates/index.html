@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Recipes Homepage</title>
+    <meta charset="UTF-8"/>
+    <title>Recipe Home</title>
 </head>
 <body>
 <h1>My Recipes!</h1>
@@ -13,8 +13,8 @@
         <th>Description</th>
     </tr>
     <tr th:each="recipe : ${recipes}">
-        <td th:text="${recipe.id}}">123</td>
-        <td th:text="${recipe.description}}">Tasty Goodness</td>
+        <td th:text="${recipe.id}">123</td>
+        <td th:text="${recipe.description}">Tasty Goodnees</td>
     </tr>
 </table>
 </body>
